@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardList from "../components/card-list/CardList";
 import SearchBox from "../components/SearchBox";
 import "./App.scss";
+import ErrorBoundary from "./ErrorBoundary";
 
 class App extends Component {
   state = {
@@ -36,7 +37,9 @@ class App extends Component {
         <div className="container-fluid mt-2">
           <h1 className="text-center display-1 text-success">ROBOFRIENDS</h1>
           <SearchBox searchChange={this.onSearchChange} />
-          <CardList robots={filteredRobos} />
+          <ErrorBoundary>
+            <CardList robots={filteredRobos} />
+          </ErrorBoundary>
         </div>
       );
     } else {
