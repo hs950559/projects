@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { robots } from "../data/robots";
 import CardList from "./card-list/CardList";
 import SearchBox from "./SearchBox";
+import "./App.scss";
 
 class App extends Component {
   state = {

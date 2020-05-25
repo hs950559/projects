@@ -2,6 +2,7 @@
 $body-bg: #eee;
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
+@import "fonts";
 
 .robos {
   display: grid;
