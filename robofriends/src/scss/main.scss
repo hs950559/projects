@@ -2,3 +2,8 @@
 $body-bg: #eee;
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
+
+.robos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+}
