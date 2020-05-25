@@ -8,7 +8,11 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid mt-2">
+<<<<<<< HEAD
         <h1 className="text-center display-1 text-success">ROBOFRIENDS</h1>
+=======
+        <h1 className="text-center">ROBOFRIENDS</h1>
+>>>>>>> 34799ea768ddd64c325ba3acd129e6dfca52c2c0
         <SearchBox />
         <CardList robots={robots} />
       </div>
